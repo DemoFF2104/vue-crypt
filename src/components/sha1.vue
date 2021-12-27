@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     getMessage() {
-      const path = 'http://localhost:5000/sha1';
+      const path = 'https://flask-vue-fk.herokuapp.com/sha1';
       axios
         .get(path)
         .then((res) => {
@@ -56,7 +56,7 @@ export default {
         });
     },
     getHash(payload) {
-      const path = 'http://localhost:5000/sha1';
+      const path = 'https://flask-vue-fk.herokuapp.com/sha1';
       axios
         .post(path, payload)
         .then(() => {

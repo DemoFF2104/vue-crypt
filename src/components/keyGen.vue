@@ -87,7 +87,7 @@ export default {
   },
   methods: {
     getMessage() {
-      const path = 'http://localhost:5000/keygen';
+      const path = 'https://flask-vue-fk.herokuapp.com/keygen';
       axios
         .get(path)
         .then((res) => {

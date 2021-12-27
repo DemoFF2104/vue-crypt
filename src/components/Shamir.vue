@@ -67,7 +67,7 @@ export default {
   },
   methods: {
     getMessage(step) {
-      const path = `http://localhost:5000/shamir/${step}`;
+      const path = `https://flask-vue-fk.herokuapp.com/shamir/${step}`;
       axios
         .get(path)
         .then((res) => {
@@ -95,7 +95,7 @@ export default {
       else this.switch1Label = 'Расшифровать';
     },
     doStep(step, payload) {
-      const path = `http://localhost:5000/shamir/${step}`;
+      const path = `https://flask-vue-fk.herokuapp.com/shamir/${step}`;
       axios
         .post(path, payload)
         .then(() => {

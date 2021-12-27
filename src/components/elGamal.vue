@@ -96,7 +96,7 @@ export default {
   },
   methods: {
     getMessage(flag) {
-      const path = `http://localhost:5000/elgamal/${flag}`;
+      const path = `https://flask-vue-fk.herokuapp.com/elgamal/${flag}`;
       axios
         .get(path)
         .then((res) => {
@@ -145,7 +145,7 @@ export default {
       }
     },
     elSend(payload) {
-      const path = 'http://localhost:5000/elgamal/send';
+      const path = 'https://flask-vue-fk.herokuapp.com/elgamal/send';
       axios
         .post(path, payload)
         .then(() => {
@@ -157,7 +157,7 @@ export default {
         });
     },
     elDecode(payload) {
-      const path = 'http://localhost:5000/elgamal/decode';
+      const path = 'https://flask-vue-fk.herokuapp.com/elgamal/decode';
       axios
         .post(path, payload)
         .then(() => {

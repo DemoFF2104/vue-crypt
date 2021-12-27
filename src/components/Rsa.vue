@@ -78,7 +78,7 @@ export default {
   },
   methods: {
     getMessage(flag) {
-      const path = `http://localhost:5000/rsa/${flag}`;
+      const path = `https://flask-vue-fk.herokuapp.com/rsa/${flag}`;
       axios
         .get(path)
         .then((res) => {
@@ -96,7 +96,7 @@ export default {
         });
     },
     rsaCode(payload) {
-      const path = 'http://localhost:5000/rsa/code';
+      const path = 'https://flask-vue-fk.herokuapp.com/rsa/code';
       axios
         .post(path, payload)
         .then(() => {
@@ -108,7 +108,7 @@ export default {
         });
     },
     rsaEncode(payload) {
-      const path = 'http://localhost:5000/rsa/encode';
+      const path = 'https://flask-vue-fk.herokuapp.com/rsa/encode';
       axios
         .post(path, payload)
         .then(() => {
